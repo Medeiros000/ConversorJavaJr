@@ -57,11 +57,6 @@ As Classes Medidas e Temperaturas foram implementadas como Interface e seus Mét
 
 * **Júnior Medeiros - Desenvolvedor Java** - *Trabalho Inicial e todo o resto* - [JrMedeiros](https://github.com/Medeiros000)
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
 
 ## 🎁 Expressões de gratidão
 
