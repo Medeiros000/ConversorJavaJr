@@ -1,0 +1,60 @@
+.button{
+    -fx-background-color: #000;
+    -fx-border-radius: 0px;
+    -fx-text-fill: #F8F8F8;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-text-alignment: center;
+}
+.button:hover{
+    /*-fx-background-color: #222222;*/
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.combo-box, .list-view, .list-cell{
+    -fx-background-color: #000;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+.combo-box:hover, .list-view:hover, .list-cell:hover{
+    -fx-background-color: #222222;
+}
+.list-cell:filled:hover{
+    -fx-background-color: #222222;
+}
+.moedaResposta{
+    -fx-font-size: 22px;
+}
+#titulo{
+    -fx-font-size: 24px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+#principal{
+    -fx-background-color: transparent;
+
+}
+.label {
+    -fx-font-size: 16px;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #FFFFFF;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="principal" maxHeight="500.0" maxWidth="350.0" minHeight="500.0" minWidth="350.0" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #000;" stylesheets="@../CSS/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConversorOne.MainController">
+   <children>
+      <Pane fx:id="home" layoutX="121.0" layoutY="43.0" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Pane fx:id="Home" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #252525;">
+               <children>
+                  <ImageView fitHeight="350.0" fitWidth="350.0" pickOnBounds="true" rotate="180.0">
+                     <image>
+                        <!--suppress XmlPathReference -->
+                        <Image url="@../image/Deep%20Space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="320.0" fitWidth="381.0" layoutX="15.0" layoutY="15.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/java.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="34.0" layoutY="32.0" style="-fx-font-size: 20;" text="Challenge ONE Back End - Java" />
+                  <Label layoutX="34.0" layoutY="325.0" style="-fx-font-size: 12px;" text="Cotações monetárias deste obtidas da AwesomeAPI" />
+                  <Label layoutX="25.0" layoutY="125.0" prefWidth="300.0" text="Projeto proposto pela AluraONE Next Education para por em prática os conhecimentos obtidos através das aulas de Java na Plataforma de ensino da Alura." textAlignment="CENTER" wrapText="true" />
+               </children></Pane>
+            <Pane fx:id="moeda" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #d6873f;" visible="false">
+               <children>
+                  <ImageView fitHeight="350.0" fitWidth="350.0" opacity="0.73" pickOnBounds="true" rotate="180.0">
+                     <image>
+                        <!--suppress XmlPathReference -->
+                        <Image url="@../image/Deep%20Space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="132.0" fitWidth="87.0" layoutX="253.0" layoutY="256.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/currency%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="moedaArea" focusTraversable="false" layoutX="85.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefColumnCount="1" prefHeight="28.0" prefRowCount="1" prefWidth="180.0" style="-fx-text-align: center;">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextArea>
+                  <Button layoutX="137.0" layoutY="226.0" mnemonicParsing="false" onAction="#converterMoeda" prefHeight="25.0" prefWidth="72.0" style="-fx-font-size: 12;" text="converter" />
+                  <ComboBox fx:id="escolherMoedaIn" layoutX="14.0" layoutY="164.0" prefWidth="150.0" promptText="Escolha a moeda" styleClass="combo-box">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <ComboBox fx:id="escolherMoedaOut" layoutX="186.0" layoutY="164.0" prefWidth="150.0" promptText="Escolha a moeda">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <Label fx:id="moedaResposta" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="274.0" prefHeight="25.0" prefWidth="320.0" style="-fx-font-weight: bold;" text="Moeda Convertida" textAlignment="CENTER" />
+                  <Label layoutX="60.0" layoutY="53.0" text="escreva o valor a ser convertido">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="139.0" text="converter de" />
+                  <Label layoutX="186.0" layoutY="139.0" text="para" />
+                  <Button layoutX="151.0" layoutY="325.0" mnemonicParsing="false" onAction="#copiar" text="copiar" />
+               </children>
+            </Pane>
+            <Pane fx:id="distancia" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #132123;" visible="false">
+               <children>
+                  <ImageView fitHeight="350.0" fitWidth="350.0" layoutY="1.0" opacity="0.6" pickOnBounds="true" rotate="180.0">
+                     <image>
+                        <!--suppress XmlPathReference -->
+                        <Image url="@../image/Deep%20Space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="87.0" layoutX="259.0" layoutY="275.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/measure.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="kmArea" focusTraversable="false" layoutX="85.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefColumnCount="1" prefHeight="28.0" prefRowCount="1" prefWidth="180.0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextArea>
+                  <Button layoutX="137.0" layoutY="226.0" mnemonicParsing="false" onAction="#converterUnidade" prefHeight="25.0" prefWidth="72.0" style="-fx-font-size: 12;" text="converter" />
+                  <ComboBox fx:id="escolherUnidadeIn" layoutX="14.0" layoutY="164.0" prefWidth="150.0" promptText="Escolha a unidade" />
+                  <ComboBox fx:id="escolherUnidadeOut" layoutX="186.0" layoutY="164.0" prefWidth="150.0" promptText="Escolha a unidade" />
+                  <Label fx:id="kmResposta" alignment="CENTER" layoutX="5.0" layoutY="275.0" prefHeight="25.0" prefWidth="340.0" text="Distância Convertida" />
+                  <Label layoutX="60.0" layoutY="53.0" text="escreva o valor a ser convertido" />
+                  <Label layoutX="14.0" layoutY="139.0" text="converter de" />
+                  <Label layoutX="186.0" layoutY="139.0" text="para" />
+               </children>
+            </Pane>
+            <Pane fx:id="temperatura" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #a81f1a;" visible="false">
+               <children>
+                  <ImageView fitHeight="350.0" fitWidth="350.0" opacity="0.6" pickOnBounds="true" rotate="180.0">
+                     <image>
+                        <!--suppress XmlPathReference -->
+                        <Image url="@../image/Deep%20Space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="66.0" layoutX="282.0" layoutY="276.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/thermometer.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="medidaArea" focusTraversable="false" layoutX="85.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefColumnCount="1" prefHeight="28.0" prefRowCount="1" prefWidth="180.0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextArea>
+                  <Button layoutX="137.0" layoutY="226.0" mnemonicParsing="false" onAction="#converterTemperatura" prefHeight="25.0" prefWidth="72.0" style="-fx-font-size: 12;" text="converter" textAlignment="CENTER" />
+                  <ComboBox fx:id="escolherMedidaIn" layoutX="14.0" layoutY="164.0" prefWidth="150.0" promptText="Escolha a medida" />
+                  <ComboBox fx:id="escolherMedidaOut" layoutX="186.0" layoutY="164.0" prefWidth="150.0" promptText="Escolha a medida" />
+                  <Label fx:id="temperaturaResposta" alignment="CENTER" layoutX="15.0" layoutY="275.0" prefHeight="25.0" prefWidth="320.0" text="Temperatura Convertida" textAlignment="CENTER" />
+                  <Label layoutX="60.0" layoutY="53.0" text="escreva o valor a ser convertido" />
+                  <Label layoutX="14.0" layoutY="139.0" text="converter de" />
+                  <Label layoutX="186.0" layoutY="139.0" text="para" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="6.0" layoutY="514.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="460.0">
+         <children>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="280.0" layoutY="3.0" onMouseClicked="#gitHub" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/github.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="311.0" layoutY="1.0" onMouseClicked="#linkedin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/linkedin.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="108.0" layoutY="1.0" prefHeight="25.0" prefWidth="135.0" text="Júnior Medeiros" textFill="WHITE" />
+         </children>
+      </Pane>
+      <HBox layoutX="-1.0" layoutY="67.0" prefHeight="40.0" prefWidth="350.0" AnchorPane.bottomAnchor="393.0" AnchorPane.topAnchor="67.0">
+         <children>
+            <Button fx:id="btnHome" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#camadaHome" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: #020202;" text="Home" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+             <Button fx:id="btnMoeda" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#camadaMoeda" prefHeight="35.0" prefWidth="87.0" text="Moeda" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="0.8" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDist" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#camadaDistancia" prefHeight="35.0" prefWidth="87.0" text="Distancia" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="0.7" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnTemp" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#camadaTemperatura" prefHeight="35.0" prefWidth="87.0" style="-fx-font-size: 11;" text="Temperatura" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="0.8" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Pane fx:id="arrastar" prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+             <ImageView fx:id="fechar" fitHeight="36.0" fitWidth="30.0" layoutX="309.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/fechar.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label id="titulo" fx:id="titulo" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="9.0" prefHeight="34.0" prefWidth="251.0" styleClass="titulo" text="Conversor" />
+            <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/vector.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
