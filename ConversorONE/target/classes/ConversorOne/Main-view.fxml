@@ -16,8 +16,7 @@
                <children>
                   <ImageView fitHeight="350.0" fitWidth="350.0" pickOnBounds="true" rotate="180.0">
                      <image>
-                        <!--suppress XmlPathReference -->
-                        <Image url="@../image/Deep%20Space.jpg" />
+                        <Image url="@../image/espaco.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="320.0" fitWidth="381.0" layoutX="15.0" layoutY="15.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
@@ -33,8 +32,7 @@
                <children>
                   <ImageView fitHeight="350.0" fitWidth="350.0" opacity="0.73" pickOnBounds="true" rotate="180.0">
                      <image>
-                        <!--suppress XmlPathReference -->
-                        <Image url="@../image/Deep%20Space.jpg" />
+                        <Image url="@../image/espaco.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="132.0" fitWidth="87.0" layoutX="253.0" layoutY="256.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
@@ -75,8 +73,7 @@
                <children>
                   <ImageView fitHeight="350.0" fitWidth="350.0" layoutY="1.0" opacity="0.6" pickOnBounds="true" rotate="180.0">
                      <image>
-                        <!--suppress XmlPathReference -->
-                        <Image url="@../image/Deep%20Space.jpg" />
+                        <Image url="@../image/espaco.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="86.0" fitWidth="87.0" layoutX="259.0" layoutY="275.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
