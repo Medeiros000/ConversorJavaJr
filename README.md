@@ -2,7 +2,7 @@
 
 # Conversor de Moedas, Medidas, e Temperaturas feito por Jr Medeiros
 
-Escrito em Java e com a UI modelada em JavaFX
+Clique no link a seguir para baixar o Jar executável [download](https://github.com/Medeiros000/ConversorJavaJr/blob/main/ConversorONE/Out/artifacts/ConversorONE/ConversorONE.jar?raw=true)
 
 ![Screenshot 2023-03-21 130505](https://user-images.githubusercontent.com/98979459/226671046-1af2ca7c-e242-42e0-bc20-0c791cf3fbcb.png)![Screenshot 2023-03-21 131401](https://user-images.githubusercontent.com/98979459/226671616-a3cb8d27-726d-41c0-9927-d94b0cbfd858.png)
 
@@ -56,11 +56,6 @@ As Classes Medidas e Temperaturas foram implementadas como Interface e seus Mét
 
 * **Júnior Medeiros - Desenvolvedor Java** - *Trabalho Inicial e todo o resto* - [JrMedeiros](https://github.com/Medeiros000)
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
 
 ## 🎁 Expressões de gratidão
 
