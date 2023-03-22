@@ -39,7 +39,7 @@
                   </ImageView>
                   <ImageView fitHeight="132.0" fitWidth="87.0" layoutX="253.0" layoutY="256.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../icons/currency%20(1).png" />
+                        <Image url="@../icons/currency.png" />
                      </image>
                   </ImageView>
                   <TextArea fx:id="moedaArea" focusTraversable="false" layoutX="85.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefColumnCount="1" prefHeight="28.0" prefRowCount="1" prefWidth="180.0" style="-fx-text-align: center;">
