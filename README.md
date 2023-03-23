@@ -10,7 +10,7 @@ Clique no link a seguir para baixar o Jar executável [download](https://github.
 ### 📋 Pré-requisitos
 
 ```
-Java JDK 17 ou superior
+Java JDK 11 ou superior
 Conexão estável de internet para usar o Conversor de Moedas
 ```
 
