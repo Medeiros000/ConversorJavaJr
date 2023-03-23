@@ -60,6 +60,7 @@ As Classes Medidas e Temperaturas foram implementadas como Interface e seus Mét
 ## 🎁 Expressões de gratidão
 
 * Ao canal do YouTube @Ken-oh5yh em razão das diversas dicas relacionadas a Java📢;
+* Ao MMacedo em razão de dicas relacionadas a Java📢;
 
 
 ---
