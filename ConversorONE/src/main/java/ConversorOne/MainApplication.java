@@ -32,7 +32,7 @@ public class MainApplication extends Application {
             stage.setY(event.getScreenY() - yOffset);
         });
         stage.setScene(scene);
-        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/vector.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/iconVector.png"))));
 
         stage.show();
     }

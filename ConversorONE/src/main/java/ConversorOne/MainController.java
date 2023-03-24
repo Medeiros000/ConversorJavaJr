@@ -22,8 +22,7 @@ import static java.lang.Double.parseDouble;
 
 @SuppressWarnings("CanBeFinal")
 public class MainController extends ConversorAPI implements ConversorTemp, ConversorMedida {
-    @FXML
-    protected Label moedaResposta;
+
     ObservableList<String> escolherMoedaList = FXCollections.observableArrayList("dólar", "euro", "real", "libra esterlina", "peso argentino", "peso chileno");
     ObservableList<String> escolherUnidadeList = FXCollections.observableArrayList("quilômetro", "hectômetro", "decâmetro", "metro", "decímetro", "centímetro", "milímetro");
     ObservableList<String> escolherTemperaturaList = FXCollections.observableArrayList("celsius", "kelvin", "fahrenheit");
@@ -53,6 +52,8 @@ public class MainController extends ConversorAPI implements ConversorTemp, Conve
     private TextArea kmArea;
     @FXML
     private TextArea medidaArea;
+    @FXML
+    private Label moedaResposta;
     @FXML
     private Label kmResposta;
     @FXML
