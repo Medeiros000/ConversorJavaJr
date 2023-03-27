@@ -2,7 +2,7 @@
 
 # Conversor de Moedas, Medidas, e Temperaturas feito por Jr Medeiros
 
-Clique no link a seguir para baixar o Jar executável [download](https://github.com/Medeiros000/ConversorJavaJr/raw/main/ConversorONE/out/artifacts/ConversorONE2/ConversorONE.jar)
+Clique no link a seguir para baixar o Jar executável [download](https://github.com/Medeiros000/ConversorJavaJr/raw/main/ConversorONE/out/artifacts/ConversorONE/ConversorONE.jar)
 
 ![Screenshot 2023-03-21 130505](https://user-images.githubusercontent.com/98979459/226671046-1af2ca7c-e242-42e0-bc20-0c791cf3fbcb.png)![Screenshot 2023-03-21 131401](https://user-images.githubusercontent.com/98979459/226671616-a3cb8d27-726d-41c0-9927-d94b0cbfd858.png)
 
