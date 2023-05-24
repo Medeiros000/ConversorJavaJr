@@ -52,9 +52,10 @@ public class ConversorAPI {
         if (responseCode != 200) {
             throw new RuntimeException("HTTP error code: " + responseCode);
         } else {
-            Scanner scanner = new Scanner(url.openStream());
-            scanner.useDelimiter("\\Z");
-            return scanner.next();
+            try (Scanner scanner = new Scanner(url.openStream())) {
+                scanner.useDelimiter("\\Z");
+                return scanner.next();
+            }
         }
     }
 }
