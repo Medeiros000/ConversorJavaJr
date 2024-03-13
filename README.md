@@ -21,13 +21,6 @@ Conexão estável de internet para usar o Conversor de Moedas
 O conversor em si não necessita de instalação desde que o passo anterior tenha sido seguido
 ```
 
-## ⚙️ Executando os testes
-
-```
-Aplicativo construido e testado na Plataforma Microsoft Windows 11 Home 64-bits
-O aplicativo está funcional após alguns testes feitos em máquinas díspares e não apresentou problemas
-```
-
 ### 🔩 Análise de problemas
 
 ```
