@@ -1,45 +1,52 @@
 package ConversorOne;
-import java.text.DecimalFormat;
-import java.util.Objects;
 
-interface ConversorMedida {
-    default double converteM(double v, String m) {
-        if(Objects.equals(m, "quilômetro")){
-            v *= 1000;
-        } else if (Objects.equals(m, "hectômetro")) {
-            v *= 100;
-        } else if (Objects.equals(m, "decâmetro")) {
-            v *= 10;
-        } else if (Objects.equals(m, "metro")) {
-            v *= 1;
-        } else if (Objects.equals(m, "decímetro")) {
-            v /= 10;
-        } else if (Objects.equals(m, "centímetro")) {
-            v /= 100;
-        } else if (Objects.equals(m, "milímetro")) {
-            v /= 1000;
-        }
-        return v;
-    }
-    default String converterResposta(double v, String m){
-        String mFinal = null;
-        if(Objects.equals(m, "quilômetro")){
-            v /= 1000; mFinal = "km";
-        } else if (Objects.equals(m, "hectômetro")) {
-            v /= 100; mFinal = "hm";
-        } else if (Objects.equals(m, "decâmetro")) {
-            v /= 10; mFinal = "dam";
-        } else if (Objects.equals(m, "metro")) {
-            v *= 1; mFinal = "m";
-        } else if (Objects.equals(m, "decímetro")) {
-            v *= 10; mFinal = "dm";
-        } else if (Objects.equals(m, "centímetro")) {
-            v *= 100; mFinal = "cm";
-        } else if (Objects.equals(m, "milímetro")) {
-            v *= 1000; mFinal = "mm";
-        }
-        DecimalFormat df = new DecimalFormat("0.00");
+public class ConversorMedida {
+  protected double converteM(double valor, String medida) {
+    return switch (medida) {
+      case "quilômetro" -> valor * 1000;
+      case "hectômetro" -> valor * 100;
+      case "decâmetro" -> valor * 10;
+      case "metro" -> valor * 1;
+      case "decímetro" -> valor / 10;
+      case "centímetro" -> valor / 100;
+      case "milímetro" -> valor / 1000;
+      default -> throw new IllegalArgumentException("Medida inválida: " + medida);
+    };
+  }
 
-        return df.format(v) + " " + mFinal;
+  protected String converterResposta(double valor, String medida) {
+    String medidaFinal = null;
+    switch (medida) {
+      case "quilômetro" -> {
+        medidaFinal = "km";
+        valor /= 1000;
+      }
+      case "hectômetro" -> {
+        medidaFinal = "hm";
+        valor /= 100;
+      }
+      case "decâmetro" -> {
+        medidaFinal = "dam";
+        valor /= 10;
+      }
+      case "metro" -> {
+        medidaFinal = "m";
+        valor *= 1;
+      }
+      case "decímetro" -> {
+        medidaFinal = "dm";
+        valor *= 10;
+      }
+      case "centímetro" -> {
+        medidaFinal = "cm";
+        valor *= 100;
+      }
+      case "milímetro" -> {
+        medidaFinal = "mm";
+        valor *= 1000;
+      }
+      default -> throw new IllegalArgumentException("Medida inválida: " + medida);
     }
+    return String.format("%.2f %s", valor, medidaFinal);
+  }
 }

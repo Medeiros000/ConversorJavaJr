@@ -9,29 +9,30 @@ Clique no link a seguir para baixar o Jar executável [download](https://github.
 
 ### 📋 Pré-requisitos
 
-```
-Java JDK 11 ou superior
-Conexão estável de internet para usar o Conversor de Moedas
-```
-
+- **Java JDK 17** ou superior instalado.
+- **Conexão estável de internet** para utilizar o Conversor de Moedas (as cotações são obtidas online).
 
 ### 🔧 Instalação
 
-```
-O conversor em si não necessita de instalação desde que o passo anterior tenha sido seguido
-```
+1. Baixe o arquivo JAR pelo link disponível acima.
+2. Certifique-se de que o Java JDK está instalado e configurado no seu sistema.
+3. Execute o JAR com o comando:
+  ```
+  java -jar ConversorONE.jar
+  ```
+  Não é necessário instalar o programa, apenas executar o arquivo JAR.
 
 ### 🔩 Análise de problemas
 
-```
-Foi feita uma verificação do código no Intellij e nela consta que a AwesomeAPI pode apresentar erros
-```
+- O funcionamento do Conversor de Moedas depende da disponibilidade da AwesomeAPI. Caso a API esteja fora do ar ou haja problemas de conexão, o recurso pode apresentar erros.
+- Recomenda-se verificar a conexão com a internet e o status da API em caso de falhas.
 
 ### ⌨️ Estilo de codificação
 
-```
-As Classes Medidas e Temperaturas foram implementadas como Interface e seus Métodos feitos em Default(def) permitindo assim que fossem invocados pela Main
-```
+- O projeto segue boas práticas de organização de código em Java.
+- Foram implementadas classes separadas para conversão de **Moedas**, **Medidas** e **Temperaturas**, facilitando a manutenção e expansão do código.
+- Utilização de JavaFX para interface gráfica e padrões de projeto para modularidade.
+
 
 ## 🛠️ Construído com
 
